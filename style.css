@@ -4,11 +4,13 @@
   --highlight-color: red;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* outline: 1px solid rebeccapurple; */
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -25,7 +27,6 @@ body {
 
 .dashboard-side {
   background-color: var(--primary-color);
-  height: 100dvh;
 }
 
 .dashboard-header {
@@ -33,6 +34,7 @@ body {
   align-items: center;
   margin-top: 25px;
   margin-left: 25px;
+  margin-right: 5px;
 }
 
 .logo {
@@ -61,6 +63,7 @@ a {
 .dashboard-main-items,
 .dashboard-other-items {
   margin-top: 30px;
+  margin-right: 5px;
 }
 
 .profile-side {
@@ -104,6 +107,7 @@ a {
   display: flex;
   align-items: center;
   margin-left: 150px;
+  margin-right: 5px;
 }
 
 .notification-icon {
@@ -114,7 +118,9 @@ a {
 .profile-img-small {
   width: 35px;
   height: 35px;
+}
 
+.mtl25px {
   margin-left: 25px;
   margin-top: 25px;
 }
@@ -165,6 +171,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-right: 5px;
 }
 
 .buttons button {
@@ -182,4 +189,138 @@ a {
   grid-row: 3/6;
   display: grid;
   background-color: lightgrey;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 0.25fr 10fr;
+  gap: 15px;
+}
+
+.projects {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.projects p {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.a-t {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 40px;
+}
+
+.a-t p {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.project-container {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+}
+
+.highlight {
+  position: relative;
+  background-color: var(--highlight-color);
+  height: 100%;
+  width: 50px;
+  border-radius: 15px 0 0 15px;
+}
+
+.card-content p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-content p:nth-child(1) {
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.a-t-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.anouncement-box {
+  width: calc(100% - 30px);
+  height: 50%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.a-box {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 5px;
+}
+
+.a-box:nth-child(2) {
+  border-top: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.a-box p:nth-child(1) {
+  margin-top: 10px;
+  font-size: small;
+  font-weight: bold;
+}
+.a-box p:nth-child(2) {
+  margin-bottom: 10px;
+  font-size: smaller;
+}
+
+.trending-box {
+  width: calc(100% - 30px);
+  height: 30%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.t-box {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 5px;
+}
+
+.a-t-t {
+  margin-top: 30px;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.t-box {
+  width: calc(100% - 30px);
+  height: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.t-box div {
+  margin-left: 5px;
+}
+
+.t-box p {
+  font-size: smaller;
 }
